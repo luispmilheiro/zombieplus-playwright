@@ -1,0 +1,98 @@
+{
+    "create": {
+        "title": "Night of the Living Dead",
+        "overview": "Um grupo de desconhecidos se refugia em uma casa de fazenda enquanto mortos-vivos começam a atacar e dominar a região.",
+        "featured": false,
+        "release_year": 1970,
+        "company": "Columbia Pictures",
+        "cover": "/images/night_of_the_living_dead.png"
+    },
+    "dawn_of_the_dead_1978": {
+        "title": "Dawn of the Dead",
+        "overview": "Durante um apocalipse zumbi, um grupo de sobreviventes encontra abrigo em um shopping center, onde luta para permanecer vivo.",
+        "featured": false,
+        "release_year": 1978,
+        "company": "United Film Distribution Company",
+        "cover": "/images/dawn_of_the_dead_1978.png"
+    },
+    "day_of_the_dead": {
+        "title": "Day of the Dead",
+        "overview": "Cientistas e militares vivem em um bunker subterrâneo tentando encontrar uma solução para a infestação zumbi enquanto conflitos internos aumentam.",
+        "featured": false,
+        "release_year": 1985,
+        "company": "United Film Distribution Company",
+        "cover": "/images/day_of_the_dead.png"
+    },
+    "braindead": {
+        "title": "Braindead",
+        "overview": "Após a mãe de um jovem ser infectada por uma criatura exótica, ela se transforma em um zumbi e inicia uma epidemia de mortos-vivos.",
+        "featured": false,
+        "release_year": 1992,
+        "company": "Trimark Pictures",
+        "cover": "/images/braindead.png"
+    },
+    "28_days_later": {
+        "title": "28 Days Later",
+        "overview": "Um homem acorda de um coma para descobrir que um vírus altamente contagioso devastou o Reino Unido, transformando pessoas em criaturas violentas.",
+        "featured": false,
+        "release_year": 2002,
+        "company": "Fox Searchlight Pictures",
+        "cover": "/images/28_days_later.png"
+    },
+    "shaun_of_the_dead": {
+        "title": "Shaun of the Dead",
+        "overview": "Um vendedor comum tenta salvar seus amigos e familiares quando Londres é tomada por uma invasão de zumbis, usando humor e improviso.",
+        "featured": false,
+        "release_year": 2004,
+        "company": "Universal Pictures",
+        "cover": "/images/shaun_of_the_dead.png"
+    },
+    "dawn_of_the_dead_2004": {
+        "title": "Dawn of the Dead",
+        "overview": "Um grupo de sobreviventes tenta escapar de uma epidemia zumbi refugiando-se em um shopping enquanto o caos toma conta do mundo.",
+        "featured": false,
+        "release_year": 2004,
+        "company": "Universal Pictures",
+        "cover": "/images/dawn_of_the_dead_2004.png"
+    },
+    "rec": {
+        "title": "REC",
+        "overview": "Uma repórter e seu cinegrafista acompanham bombeiros durante uma ocorrência e acabam presos em um prédio onde uma infecção transforma moradores em criaturas violentas.",
+        "featured": false,
+        "release_year": 2007,
+        "company": "Filmax International",
+        "cover": "/images/rec.png"
+    },
+    "zombieland": {
+        "title": "Zombieland",
+        "overview": "Quatro sobreviventes viajam pelos Estados Unidos enfrentando zumbis enquanto tentam encontrar um lugar seguro e manter a sanidade.",
+        "featured": false,
+        "release_year": 2009,
+        "company": "Columbia Pictures",
+        "cover": "/images/zombieland.png"
+    },
+    "world_war_z": {
+        "title": "World War Z",
+        "overview": "Um ex-investigador das Nações Unidas percorre diversos países para descobrir a origem de uma pandemia que transforma humanos em criaturas extremamente agressivas.",
+        "featured": false,
+        "release_year": 2013,
+        "company": "Paramount Pictures",
+        "cover": "/images/world_war_z.png"
+    },
+    "train_to_busan": {
+        "title": "Train to Busan",
+        "overview": "Passageiros de um trem-bala lutam pela sobrevivência quando uma infecção zumbi se espalha rapidamente durante a viagem.",
+        "featured": false,
+        "release_year": 2016,
+        "company": "Next Entertainment World",
+        "cover": "/images/train_to_busan.png"
+    },
+    "one_cut_of_the_dead": {
+        "title": "One Cut of the Dead",
+        "overview": "A gravação de um filme de baixo orçamento sobre zumbis toma um rumo inesperado quando eventos aparentemente reais começam a acontecer.",
+        "featured": false,
+        "release_year": 2017,
+        "company": "Enbu Seminar",
+        "cover": "/images/one_cut_of_the_dead.png"
+    }
+}
