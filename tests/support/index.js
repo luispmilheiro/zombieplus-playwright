@@ -1,9 +1,9 @@
 const { test: base, expect } = require('@playwright/test')
 
+import { Dialog } from './actions/Components'
 import { Leads } from './actions/Leads'
 import { Login } from './actions/Login'
 import { Movies } from './actions/Movies'
-import { Toast } from './actions/Components'
 import { Api } from './api'
 
 const test = base.extend({
@@ -13,7 +13,7 @@ const test = base.extend({
         context['leads'] = new Leads(page)
         context['login'] = new Login(page)
         context['movies'] = new Movies(page)
-        context['toast'] = new Toast(page)
+        context['dialog'] = new Dialog(page)
 
         await use(context)
     },

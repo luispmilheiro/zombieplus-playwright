@@ -13,8 +13,8 @@ test('deve logar como administrador', async ({ page }) => {
 test('não deve logar com senha incorreta', async ({ page }) => {
   await page.login.submitLoginForm('admin@zombieplus.com', 'senha123')
 
-  const message = /Ocorreu um erro ao tentar efetuar o login. Por favor, verifique suas credenciais e tente novamente./
-  await page.toast.containText(message)
+  const message = 'Ocorreu um erro ao tentar efetuar o login. Por favor, verifique suas credenciais e tente novamente.'
+  await page.dialog.haveText(message)
 })
 
 test('não deve logar com email inválido', async ({ page }) => {
