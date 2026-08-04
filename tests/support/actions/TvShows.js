@@ -59,7 +59,9 @@ export class TvShows {
     }
 
     async tableHave(content) {
-        const rows = await this.page.getByRole('row')
-        await expect(rows).toContainText(content)
+        for (const text of content) {
+            const row = this.page.getByRole('row').filter({ hasText: text })
+            await expect(row).toHaveCount(1)
+        }
     }
 }
