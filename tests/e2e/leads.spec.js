@@ -1,6 +1,12 @@
 import { test, expect } from '../support'
 import { faker } from '@faker-js/faker'
 
+import { executeSQL } from '../support/database'
+
+test.beforeAll(async () => {
+    await executeSQL('DELETE FROM leads')
+})
+
 test.beforeEach(async ({ page }) => {
   await page.leads.visit()
   await page.leads.openLeadModal()

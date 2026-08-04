@@ -1,12 +1,18 @@
 import { expect } from '@playwright/test';
 
-export class Movies {
+export class TvShows {
 
     constructor(page) {
         this.page = page
     }
 
+    async visit() {
+        await this.page.goto('/admin/tvshows');
+        expect(this.page.locator('//h1[text()="Séries de TV"]')).toBeVisible()
+    }
+
     async goToForm() {
+        await this.visit()
         await this.page.locator('a[href$="/register"]').click()
     }
 
@@ -14,22 +20,24 @@ export class Movies {
         await this.page.getByRole('button', { name: 'Cadastrar' }).click()
     }
 
-    async create(movie) {
+    async create(tvshow) {
         await this.goToForm()
 
-        await this.page.locator('#title').fill(movie.title)
+        await this.page.locator('#title').fill(tvshow.title)
 
-        await this.page.locator('#overview').fill(movie.overview)
+        await this.page.locator('#overview').fill(tvshow.overview)
 
         await this.page.locator('#select_company_id').click()
-        await this.page.locator('#select_company_id .react-select__option').filter({ hasText: movie.company }).click()
+        await this.page.locator('#select_company_id .react-select__option').filter({ hasText: tvshow.company }).click()
 
         await this.page.locator('#select_year').click()
-        await this.page.locator('#select_year .react-select__option').filter({ hasText: movie.release_year }).click()
+        await this.page.locator('#select_year .react-select__option').filter({ hasText: tvshow.release_year }).click()
 
-        await this.page.locator('#cover').setInputFiles('tests/support/fixtures' + movie.cover)
+        await this.page.locator('#seasons').fill(String(tvshow.season))
 
-        if (movie.featured) {
+        await this.page.locator('#cover').setInputFiles('tests/support/fixtures' + tvshow.cover)
+
+        if (tvshow.featured) {
             await this.page.locator('.featured .react-switch').click()
         }
 
@@ -40,8 +48,8 @@ export class Movies {
         await expect(this.page.locator('.alert')).toHaveText(target)
     }
 
-    async remove(movie) {
-        await this.page.getByRole('row', { name: movie.title }).getByRole('button').click()
+    async remove(tvshow) {
+        await this.page.getByRole('row', { name: tvshow.title }).getByRole('button').click()
         await this.page.click('.confirm-removal')
     }
 
