@@ -1,11 +1,12 @@
 import { Pool } from 'pg'
+require('dotenv').config({ quiet: true })
 
 const DbConfig = {
-    user: 'postgres',
-    host: 'localhost',
-    database: 'zombieplus',
-    password: 'pwd123',
-    port: 5432
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT
 }
 
 export async function executeSQL(sqlScript) {
