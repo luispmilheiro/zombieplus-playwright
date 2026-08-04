@@ -27,6 +27,8 @@ npx playwright test
 ```
 npx playwright show-report
 ```
-
-<hr>
-Curso disponível em https://qaxperience.com
+ou
+```
+npx allure generate ./allure-results
+npx allure open ./allure-report
+```
